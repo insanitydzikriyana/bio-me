@@ -1,0 +1,99 @@
+/* Untuk Mengatasi jarak dll yang tidak di inginkan */
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+/* CSS pada vody yang penting */
+body {
+  background-color: #191931;
+  color: #e1e1f1;
+  /* Jika body flex kita akan bisa mengatur element di dalam body nya */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Outfit", sans-serif;
+  /* untuk kasi jarak atas */
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+  /* Mengatur jarak baris element (karna ini sama semua) */
+  gap: 1rem;
+}
+
+.my-photo {
+  width: 10rem;
+}
+
+ul {
+  /* Jadi walau di perkecil lebarnya tetap 80% */
+  width: 80%;
+  /* Jadi di saat 80% si kotak nya akan berhenti membesar */
+  max-width: 40rem;
+}
+
+ul li {
+  /* menyembunyikan titik */
+  list-style: none;
+}
+/* buat memisahkan Colom yag tadi rapet jadi renggang */
+.list a:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+a {
+  /* untuk menghilangkan garis bawah atau decorati tesk nya */
+  text-decoration: none;
+  /* Pake inherit juga bisa jadi warna dari sebelumnya akan di wariskan */
+  color: #e1e1f1;
+}
+
+.sosmed {
+  /* Untuk mengubah ukuran  */
+  font-size: 1.5rem;
+}
+
+.sosmed a:not(:last-child) {
+  /* untuk mengukur antar jarak kanan */
+  margin-right: 1rem;
+}
+.link-card {
+  /* Biar sejajar */
+  display: flex;
+  /* Karna Card nya udh di bungkus tinggal tambahkan ini biar sejajar */
+  align-items: center;
+  /* Untuk Menyesuaikan Element nya */
+  justify-content: space-between;
+  background-color: #2d2d56;
+  padding: 1rem;
+  /* Untuk Biar ada lengkungan pada border */
+  border-radius: 20px;
+
+  /* BIar ada bayangin dan bagus keren */
+  box-shadow: 8px 10px 5px black;
+  border: 2px solid #2d2d56;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Untuk animasi keren saat di click */
+.link-card:hover {
+  border: 2px solid white;
+}
+
+.link-icon {
+  background-image: linear-gradient(to top, purple, cyan);
+  padding: 0.5rem;
+  border-radius: 10px;
+  aspect-ratio: 1/1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.link-action {
+  /* Agar Muncul saat di clik muncul tangan */
+  cursor: pointer;
+  color: inherit;
+}
+
