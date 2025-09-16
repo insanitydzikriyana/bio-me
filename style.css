@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 
-/* CSS pada vody yang penting */
+/* CSS pada body yang penting */
 body {
   background-color: #191931;
   color: #e1e1f1;
@@ -96,4 +96,5 @@ a {
   cursor: pointer;
   color: inherit;
 }
+
 
