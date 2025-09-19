@@ -15,7 +15,7 @@ body {
   align-items: center;
   font-family: "Outfit", sans-serif;
   /* untuk kasi jarak atas */
-  padding-top: 4rem;
+  padding-top: 1rem;
   padding-bottom: 2rem;
   /* Mengatur jarak baris element (karna ini sama semua) */
   gap: 1rem;
